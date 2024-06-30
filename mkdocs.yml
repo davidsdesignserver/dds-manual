@@ -161,7 +161,11 @@ nav:
     - Style Guide: contribution/styleguide.md
     - Methods of Contributing: contribution/methodsOfContributing.md
     - Contributors: contribution/contributors.md
-  
+
+
+  - Cadathon: 
+    - cadathon/cadathon.md
+    - Hall of Fame: cadathon/hall-of-fame.md
 
 markdown_extensions:
   - abbr
