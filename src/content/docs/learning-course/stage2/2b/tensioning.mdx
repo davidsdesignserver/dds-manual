@@ -6,9 +6,11 @@ description: Tensioning in pivot mechanisms
 
 ## Tensioning
 
-To accommodate chain stretch over the course of a season and reduce backlash, an active tensioning system is required. If enough chain length is available, **inline tensioners** such as turnbuckles and Spartan tensioners are the simplest way to tension the chain.
+To accommodate chain stretch over the course of a season and reduce backlash, an active tensioning system is required. 
 
-If there isn't enough space for an inline tensioner (if the chain moves too much, the tensioner might run into either of the sprockets), other methods, such as moving the position of one of the sprockets with a sliding or rotating gearbox or stage, may be used.
+# Inline Tensioners
+
+The simplest and easiest way to tension a chain is to use an inline tensioner. These come in two flavors, Spartan Tensioners and Inline Tensioners (see image below). These pull on the ends of the chain loop increasing or decreasing the loop length in very small increments. However, these aren't designed to contact sprocket teeth, so are only useful if there is enough chain length available
 
 <ContentFigure src="../img/2b/chaintensioncut.webp" gif width="60%" alt="Chain and sprocket with turnbuckle tensioner">A chain and sprocket moving with a turnbuckle tensioner. The turnbuckle is located on the bottom half the chain.</ContentFigure>
 
@@ -18,6 +20,45 @@ If there isn't enough space for an inline tensioner (if the chain moves too much
 
   ![Spartan tensioner](../img/2b/spartan_tensioner.webp)
   Spartan tensioner
+</Slides>
+
+# Floaters
+
+Floating chain tensioners are nice to work with because they do not require any additional structure and mount directly to the chain. These come in two types. One type squeezes the outsides of the chain pulling it inward in order to tension it, while the other is a sprocket that sits on the inside of the chain pushing the sides outward in order to tension it.
+
+Floating sprockets come in discrete sizes, so there is less fine adjustability in the tension of the chain. These are generally used when space is a constraint, since they do not need lubrication or tools to adjust, and are very compact to install. They may also vibrate at high speeds and can come out if there is a bit of slack on the chain.
+
+Floating chain tensioners squeeze the chain from both sides. This can add friction which reduces the efficiency of the system at the tradeoff of less complexity relative to an adjustible gearbox or idler gear. Additionally, the width of the tensioner has to be smaller than the diameter of the smaller sprocket or else it will slide towards the smaller sprocket and get stuck. COTS vendors sell premade inline tensioners, or teams can make their own. These tensioners are only held onto the chain from the tension of the chain applying pressure on the tensioner, so this has a centering effect on the tensioner because that is where forces are equal. Also, gravity can have an affect on the position of the tensioner so that is something to mindful of. 
+
+<Slides>
+  ![Floating Sprocket](../img/2b/mcmastercarr-inside-chain-tensioner.png)
+  Floating Ring Tensioner
+  ![Floating Clamp Tensioner](../img/2b/mcmastercall-outside-chain-tensioner.png)
+  Floating Outside Tensioner
+  ![Custom Floating Zip Tie Clamp Tensioner](../img/2b/floating-ziptie-tensioner.jpeg)
+  1323's Custom Floating Zip Tie Clamping Tensioner
+</Slides>
+
+# Idlers
+
+Idlers are dead sprockets that can spin freely, positioned in such a way that they tug on the chain providing tension. They can be spring loaded to automatically tension them or screw driven. They can move linearly or rotationally. Teams can also purchase cots chain tensioners from COTS vendors, or make their own. 
+
+<Slides>
+  ![Spring Loaded Rotational Arm Tensioner](../img/2b/spring-loaded-rotational-tensioner.png)
+  Spring Loaded Rotational Tensioner
+  ![Screw Adjustible Linear Tensioner](../img/2b/screw-chain-tensioner.png)
+  Screw Adjustible Linear Tensioner
+</Slides>
+
+# Moving Sprockets
+
+This is probably the most common form of chain tensioning in FRC. Mounting points for the sprockets can be moved rotationally or linearly through screws and springs to pull them away from each other in order to tension the chain.
+
+<Slides>
+![2910 Rotational Chain Tensioner](../img/2b/planetgear_idler.webp)
+<LinkButton href="https://frcdesign.org/mechanism-examples/pivots/2910_2023_pivot/">2910 Rotational Chain Tensioner</LinkButton>
+![1114 Sliding Gearbox Tensioner](../img/2b/1114-belt-tensioner.png)
+This belt tensioner from 1114 Simbotics shows a sliding gearbox with bolts to the bottom (shown in red) to adjust the center to center distance of the pulleys in order to tension the belt that powers their end effector. A similar idea can be used with chains
 </Slides>
 
 ### Reference Design
