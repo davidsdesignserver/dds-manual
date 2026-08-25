@@ -1,0 +1,34 @@
+# Pocketing
+
+- In FRC, Pocketing is an extremely important weight savings tool. Pocketing is essentially removing material in a strategic way to save the most weight possible while retaining the maximum strength, placid ribs where there needs to be a connection.. In real world applications, a tool called Finite Element Analysis (FEA) will be used to analyze a part and determine where it needs the most load. In FRC, however, we have no need for this because for one, the loads in FRC are extremely unpredictable and varied and there simply is not enough time to do a full FEA analysis. So, how do we pocket, then?  
+  - ![][Madtown 2025 Intake Pocketing]
+
+## When To Pocket:
+
+- While pocketing is an incredible tool for weight savings and honestly looks really cool, it takes time to do. Manufacturing all the little holes will add tons of machining time and therefore will get the robot to the programmers slower. When you can use a plate with thinner material (e.g. replacing a ¼ inch thick plate with a ⅛ inch thick plate), you should do that rather than pocket.
+
+## How To Pocket
+
+- To Pocket you need to have a lightening FeatureScript. To lighten the quickest, teams use the [Part Lighten FeatureScript](https://cad.onshape.com/documents/028ca8fb10baf53e1f6fce96/v/821c8b51ed0953526b51926e/e/a8b9e45297aac9f5688c871d). 
+    - ![][Sketch all of your rib lines onto your unpocketed face.]  
+    -  ![][Use the part lighten featurescript. Select the face of your unpocketed part and then the sketch where your rib lines are. Choose whatever values you think are acceptable for wall and rib thickness]  
+- Pocketing will be mainly done through your own intuition. Sometimes, the first thought is to pocket really light (remove very little material), but in FRC, you can usually remove a lot of material and have your structure be sound. Mentors, especially those that come from a materials science background, will usually try to push for a lighter style of pocketing when much heavier pocketing (removing more material) can be done. Again, the loads in FRC are strange.   
+  - ![][example of really light pocketing (¼ Thickness Aluminum)  ]
+- Effective pocketing will be done through 2 main ways:  
+  - Connections: usually you will connect holes like bolt holes and bearing holes with ribs.  
+  - Triangles: The strongest shape. You will usually want to implement these into pocketing.   
+  - The Imaginary Hole trick: when all of your holes are connected and there is a ton of space, you can imagine a point in the empty space to be a bolt hole and connect that with the rest of your holes.
+
+Tip: When Pocketing a plate with a motor hole, you could instead choose to remove the motor hole in your original sketch and choose to do it in pocketing  
+Tip: When Pocketing a plate with a motor bore, you can choose to remove the motor hole from the original plate and pocket a circle around the bolts.  
+WARNING: Circles do not work well with part lighten. When necessary use a center point or three point arc. 
+
+## Exercise 1: Roller Floor
+
+	[https://cad.onshape.com/documents/9ae465a2cad1900702c02a47/w/2567a4bd68cb08d83bd17301/e/c47ffb88ad4c4b80d0958df7](https://cad.onshape.com/documents/9ae465a2cad1900702c02a47/w/2567a4bd68cb08d83bd17301/e/c47ffb88ad4c4b80d0958df7)
+
+## Exercise 2: Intake Plate
+
+## Exercise 3: Bellypan (already done in course)
+
+## Exercise 4: Shooter Plate
